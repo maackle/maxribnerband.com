@@ -1,4 +1,70 @@
-/* line 1, ../app/assets/styles/main.scss */
+/* line 4, ../app/assets/styles/main.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 8, ../app/assets/styles/main.scss */
 body {
-  background: white;
+  font-family: sans-serif;
+  background: #d0d0b0;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* line 17, ../app/assets/styles/main.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 21, ../app/assets/styles/main.scss */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 26, ../app/assets/styles/main.scss */
+.container {
+  margin: auto;
+  text-align: left;
+  max-width: 100.0rem;
+  position: relative;
+}
+
+/* line 33, ../app/assets/styles/main.scss */
+#navbar {
+  z-index: 1;
+  height: 6rem;
+  background: black;
+  position: relative;
+}
+/* line 39, ../app/assets/styles/main.scss */
+#navbar .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.0rem;
+  background: black;
+  padding: 2rem;
+  display: inline-block;
+}
+/* line 48, ../app/assets/styles/main.scss */
+#navbar .links {
+  margin: 0;
+  margin-left: 14rem;
+  display: inline-block;
+}
+/* line 52, ../app/assets/styles/main.scss */
+#navbar .links li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+/* line 56, ../app/assets/styles/main.scss */
+#navbar .links a {
+  display: block;
+  height: 6rem;
+  line-height: 6rem;
+  color: white;
+  text-decoration: none;
 }

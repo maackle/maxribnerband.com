@@ -1,3 +1,64 @@
+@import "_variables";
+
+
+html {
+	font-size: 62.5%;
+}
+
 body {
-	background: white;
+	font-family: sans-serif;
+	background: $beige;
+	padding: 0;
+	margin: 0;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	margin: auto;
+	text-align: left;
+	max-width: 100.0rem;
+	position: relative;
+}
+
+#navbar {
+	$height: 6rem;
+	z-index: 1;
+	height: $height;
+	background: black;
+	position: relative;
+	.logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 10.0rem;
+		background: black;
+		padding: 2rem;
+		display: inline-block;
+	}
+	.links {
+		margin: 0;
+		margin-left: 14rem;
+		display: inline-block;
+		li {
+			display: inline-block;
+			margin: 0 1rem;
+		}
+		a {
+			display: block;
+			height: $height;
+			line-height: $height;
+			color: white;
+			text-decoration: none;
+		}
+	}
 }
