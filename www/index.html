@@ -1,29 +1,60 @@
-
+<!DOCTYPE html5>
 <html>
   <head>
     <title>MRB</title>
+    <link rel="stylesheet" href="bower/nivo-slider/nivo-slider.css"/>
+    <link rel="stylesheet" href="bower/nivo-slider/themes/default/default.css"/>
     <link rel="stylesheet" href="main.css"/>
   </head>
   <body>
     <div id="root">
-      <nav id="navbar">
-        <div class="container">
-          <div class="logo"><img src="images/max-ribner-band-logo-bk.png"/></div>
-          <ul class="links">
-            <li><a href="#">Dream Show</a></li>
-            <li><a href="#">Max</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Youth</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <div class="flame-wrapper">
+        <nav id="navbar">
+          <div class="container">
+            <div class="logo"><a href="/"><img src="images/max-ribner-band-logo-bk.png"/></a></div>
+            <ul class="links full-justify">
+              <li><a href="#">Dream Show</a></li>
+              <li><a href="#">Max</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="/gallery.html">Gallery</a></li>
+              <li><a href="#">Youth</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="theme-default slider-container">
+          <div class="ribbon"></div>
+          <div class="slider slider-main"><img src="images/slider/1.jpg"/><img src="images/slider/2.jpg"/><img src="images/slider/3.jpg"/><img src="images/slider/4.jpg"/><img src="images/slider/5.jpg"/><img src="images/slider/6.jpg"/><img src="images/slider/7.jpg"/><img src="images/slider/8.jpg"/><img src="images/slider/9.jpg"/><img src="images/slider/10.jpg"/>
+          </div>
         </div>
-      </nav>
-      <div class="container">
-        <div class="slider slider-main"><img src="images/slider/1.jpg"/></div><script type="text/javascript" src="http://x.cashmusic.org/public/cashmusic.js"></script>
-        <script type="text/javascript"> window.cashmusic.embed('http://x.cashmusic.org/public/','4890');</script>
+        <div class="container main-container">
+          <div id="split-content" class="content-row">
+            <div class="content-left">
+              <h1>NEWS</h1>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+              <p>Oh yeah! Time for some news!</p>
+            </div>
+            <div class="content-right">
+              <h2>Free Download</h2>
+              <h2>Album</h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/nivo-slider/jquery.nivo.slider.pack.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

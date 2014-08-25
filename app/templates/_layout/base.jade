@@ -1,11 +1,22 @@
+doctype html5
 html
 	head
 		title MRB
 
+		link(rel="stylesheet", href="bower/nivo-slider/nivo-slider.css")
+		link(rel="stylesheet", href="bower/nivo-slider/themes/default/default.css")
 		link(rel="stylesheet", href="main.css")
 	body
 		block body
 			#root
-				block navbar
-					include ../_partials/navbar.jade
-				block content
+				.flame-wrapper
+					block navbar
+						include ../_partials/navbar.jade
+					block banner
+					block outer_content
+						.container.main-container
+							block content
+
+		script(src="bower/jquery/dist/jquery.min.js")
+		script(src="bower/nivo-slider/jquery.nivo.slider.pack.js")
+		script(src="scripts/main.js")

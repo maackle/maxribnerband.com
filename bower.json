@@ -1,0 +1,16 @@
+{
+  "name": "maxribnerband.com",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Dougherty <maackle.d@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower",
+    "test",
+    "tests"
+  ]
+}
