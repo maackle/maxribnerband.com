@@ -250,7 +250,7 @@ body {
 }
 
 /* line 23, ../app/assets/styles/main.scss */
-img {
+img, iframe {
   max-width: 100%;
 }
 
@@ -261,76 +261,81 @@ ul {
 }
 
 /* line 32, ../app/assets/styles/main.scss */
+.constrain-width {
+  max-width: 100%;
+}
+
+/* line 36, ../app/assets/styles/main.scss */
 .container {
   margin: auto;
   text-align: left;
   position: relative;
 }
 
-/* line 38, ../app/assets/styles/main.scss */
+/* line 42, ../app/assets/styles/main.scss */
 .page-title {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 45, ../app/assets/styles/main.scss */
+/* line 49, ../app/assets/styles/main.scss */
 .flame-wrapper {
   padding: 0 10px;
   background: url(images/bg-strip-1-v.jpg);
   margin: auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 45, ../app/assets/styles/main.scss */
+  /* line 49, ../app/assets/styles/main.scss */
   .flame-wrapper {
     margin: 0 20px;
   }
 }
 
-/* line 54, ../app/assets/styles/main.scss */
+/* line 58, ../app/assets/styles/main.scss */
 .flame-wrapper, .container {
   max-width: 1200px;
 }
 
-/* line 59, ../app/assets/styles/main.scss */
+/* line 63, ../app/assets/styles/main.scss */
 .main-container {
   background: #f7ecd8;
   min-height: 90%;
 }
 
-/* line 65, ../app/assets/styles/main.scss */
+/* line 69, ../app/assets/styles/main.scss */
 .slider-container + .main-container {
   padding-top: 0;
 }
 
-/* line 69, ../app/assets/styles/main.scss */
+/* line 73, ../app/assets/styles/main.scss */
 .full-justify {
   text-align: justify;
 }
-/* line 72, ../app/assets/styles/main.scss */
+/* line 76, ../app/assets/styles/main.scss */
 .full-justify:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 79, ../app/assets/styles/main.scss */
+/* line 83, ../app/assets/styles/main.scss */
 #full-content {
   padding: 1.5rem;
 }
 
-/* line 83, ../app/assets/styles/main.scss */
+/* line 87, ../app/assets/styles/main.scss */
 .content-row {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 88, ../app/assets/styles/main.scss */
+/* line 92, ../app/assets/styles/main.scss */
 .content-row .content-left {
   display: table-cell;
   width: 66%;
   padding: 1.5rem;
 }
-/* line 94, ../app/assets/styles/main.scss */
+/* line 98, ../app/assets/styles/main.scss */
 .content-row .content-right {
   display: table-cell;
   width: 33%;
@@ -338,16 +343,16 @@ ul {
   padding: 1.5rem;
 }
 
-/* line 103, ../app/assets/styles/main.scss */
+/* line 107, ../app/assets/styles/main.scss */
 .slider-container {
   z-index: 0;
   position: relative;
 }
-/* line 107, ../app/assets/styles/main.scss */
+/* line 111, ../app/assets/styles/main.scss */
 .slider-container .nivoSlider {
   margin: 0 auto;
 }
-/* line 111, ../app/assets/styles/main.scss */
+/* line 115, ../app/assets/styles/main.scss */
 .slider-container .nivo-controlNav {
   position: absolute;
   bottom: 1rem;
@@ -355,12 +360,12 @@ ul {
   z-index: 99;
 }
 
-/* line 120, ../app/assets/styles/main.scss */
+/* line 124, ../app/assets/styles/main.scss */
 .slider-main img {
   width: 100%;
 }
 
-/* line 122, ../app/assets/styles/main.scss */
+/* line 126, ../app/assets/styles/main.scss */
 #navbar {
   margin: auto-10px;
   z-index: 100;
@@ -370,7 +375,7 @@ ul {
   position: relative;
   border-bottom: 6px double black;
 }
-/* line 131, ../app/assets/styles/main.scss */
+/* line 135, ../app/assets/styles/main.scss */
 #navbar .logo {
   -moz-transition: -moz-transform 100ms;
   -o-transition: -o-transform 100ms;
@@ -385,33 +390,33 @@ ul {
   display: inline-block;
   box-shadow: 1px 1px #b7ad9b;
 }
-/* line 142, ../app/assets/styles/main.scss */
+/* line 146, ../app/assets/styles/main.scss */
 #navbar .logo:hover {
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
 }
-/* line 146, ../app/assets/styles/main.scss */
+/* line 150, ../app/assets/styles/main.scss */
 #navbar .links {
   margin: 0;
   margin-left: 14rem;
   padding: 0 4rem 0 2rem;
 }
-/* line 151, ../app/assets/styles/main.scss */
+/* line 155, ../app/assets/styles/main.scss */
 #navbar .links li {
   display: inline-block;
   margin: 0 1rem;
 }
-/* line 155, ../app/assets/styles/main.scss */
+/* line 159, ../app/assets/styles/main.scss */
 #navbar .links a {
   -moz-transition: opacity 300ms;
   -o-transition: opacity 300ms;
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.875rem;
+  font-weight: 100;
+  font-size: 2.25rem;
   display: block;
   height: 6rem;
   line-height: 6rem;
@@ -419,47 +424,47 @@ ul {
   text-decoration: none;
   opacity: 0.7;
 }
-/* line 166, ../app/assets/styles/main.scss */
+/* line 170, ../app/assets/styles/main.scss */
 #navbar .links a:hover {
   opacity: 1;
 }
 
-/* line 173, ../app/assets/styles/main.scss */
+/* line 177, ../app/assets/styles/main.scss */
 #max-horn {
   width: 300px;
   position: absolute;
   top: 0;
   left: -60px;
 }
-/* line 179, ../app/assets/styles/main.scss */
+/* line 183, ../app/assets/styles/main.scss */
 #max-horn .logo {
   position: static;
   padding: 2rem;
   width: 26rem;
 }
 
-/* line 186, ../app/assets/styles/main.scss */
+/* line 190, ../app/assets/styles/main.scss */
 .justified-grid {
   text-align: justify;
 }
-/* line 188, ../app/assets/styles/main.scss */
+/* line 192, ../app/assets/styles/main.scss */
 .justified-grid li {
   height: 100;
   display: inline-block;
 }
-/* line 192, ../app/assets/styles/main.scss */
+/* line 196, ../app/assets/styles/main.scss */
 .justified-grid .last {
   content: '';
   width: 100%;
   display: inline-block;
 }
-/* line 197, ../app/assets/styles/main.scss */
+/* line 201, ../app/assets/styles/main.scss */
 .justified-grid img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 204, ../app/assets/styles/main.scss */
+/* line 208, ../app/assets/styles/main.scss */
 .image-gallery img {
   -moz-transition: opacity 150ms;
   -o-transition: opacity 150ms;
@@ -467,7 +472,17 @@ ul {
   transition: opacity 150ms;
   opacity: 0.8;
 }
-/* line 207, ../app/assets/styles/main.scss */
+/* line 211, ../app/assets/styles/main.scss */
 .image-gallery img:hover {
   opacity: 1;
+}
+
+/* line 217, ../app/assets/styles/main.scss */
+.video-gallery {
+  text-align: center;
+  margin: auto;
+}
+/* line 220, ../app/assets/styles/main.scss */
+.video-gallery .video {
+  margin: 3.0rem;
 }

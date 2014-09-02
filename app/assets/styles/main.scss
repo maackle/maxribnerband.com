@@ -20,13 +20,17 @@ body {
 	text-align: center;
 }
 
-img {
+img, iframe {
 	max-width: 100%;
 }
 
 ul {
 	padding: 0;
 	list-style: none;
+}
+
+.constrain-width {
+	max-width: 100%;
 }
 
 .container {
@@ -155,8 +159,8 @@ ul {
 		a {
 			@include transition(opacity 300ms);
 			text-transform: uppercase;
-			font-weight: 700;
-			font-size: $height*2.5/8;
+			font-weight: 100;
+			font-size: $height*3/8;
 			display: block;
 			height: $height;
 			line-height: $height;
@@ -207,5 +211,13 @@ ul {
 		&:hover {
 			opacity: 1;
 		}
+	}
+}
+
+.video-gallery {
+	text-align: center;
+	margin: auto;
+	.video {
+		margin: 3.0rem;
 	}
 }
