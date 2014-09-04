@@ -10,6 +10,12 @@
 
 html {
 	font-size: 62.5%;
+	@include breakpoint(768) {
+		font-size: 50%;
+	}
+	@include breakpoint(480) {
+		font-size: 40%;
+	}
 }
 
 body {
@@ -21,6 +27,7 @@ body {
 	margin: 0;
 	font-size: 1.6rem;
 	text-align: center;
+	color: $text-color;
 }
 
 img, iframe {
@@ -34,10 +41,25 @@ ul {
 
 h1, h2, h3, h4 {
 	font-family: $font-display;
+	font-weight: 400;
+}
+
+a:link, a:visited {
+	color: $link-color;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.align-center {
+	text-align: center;
+	margin: inherit auto;
 }
 
 .flame-underline {
 	padding: 1rem 0;
+	margin-bottom: 1rem;
 	// background: $flame-yellow;
 	border-bottom: 1px solid $flame-yellow;
 }
@@ -50,6 +72,7 @@ h1, h2, h3, h4 {
 	margin: auto;
 	text-align: left;
 	position: relative;
+	min-width: 320px;
 	@include breakpoint(800) {
 
 	}
@@ -57,9 +80,14 @@ h1, h2, h3, h4 {
 
 .page-title {
 	text-align: center;
-	// font-weight: 300;
+	font-size: 6rem;
+	font-weight: 100;
+	margin: 2.5rem auto 2.5rem;
 	// letter-spacing: 0.1rem;
 	text-transform: uppercase;
+	&.big-margin {
+		margin: 5rem auto;
+	}
 }
 
 .flame-wrapper {
@@ -68,7 +96,7 @@ h1, h2, h3, h4 {
 	// background: url(images/bg-strip-1-v.jpg);
 	margin: 4rem auto;
 	@include breakpoint(1200) { 
-		margin: 0 $flame-gutter * 2;
+		margin: inherit $flame-gutter * 2;
 	}
 	.flame-strip {
 		display: none;
@@ -115,24 +143,50 @@ h1, h2, h3, h4 {
 }
 
 .content-row {
+	@include clearfix;
 	// display: table;
 	width: 100%;
-	height: 100%;
 
 	.content-left {
 		// display: table-cell;
-		width: 66%;
-		padding: 2.5rem 1.5rem;
+		width: $content-left-width;
+		float: left;
+		padding: 2.5rem $content-left-padding;
+		margin: auto;
+		@include breakpoint(1200) {
+			width: $content-left-width - 200;
+		}
+		@include breakpoint(1000) {
+			width: $content-left-width - 350;
+		}
+		@include breakpoint(850) {
+			width: 368px;
+		}
+		.inner {
+
+		}
 	}
 
 	.content-right {
 		// display: table-cell;
 		float: right;
-		width: 33%;
+		width: $content-right-width;
 		background: $juice-light;
-		padding: 2.5rem 1.5rem;
-
+		padding: 2.5rem $content-right-padding;
+		overflow-y: visible;
 	}
+
+	.content-left, .content-right {
+		box-sizing: border-box;
+		@include breakpoint(768-1) {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+.sidebar-section {
+	margin: 2rem auto 4rem;
 }
 
 .slider-container {
@@ -154,43 +208,9 @@ h1, h2, h3, h4 {
 
 .slider-main img { width: 100%; }
 
-#main-logo {
-	$size: $main-logo-size;
-	@include transition(transform 100ms);
-	@include transform-origin(50%, 0);
-	z-index: 200;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: $size;
-	height: $size;
-	margin-left: -$size/2;
-	margin-top: -$size/2;
-	display: inline-block;
-	box-shadow: 0 0 3px rgba(white, 0.2);
-	&:hover {
-		@include transform(scale(1.15, 1.15));
-	}
-	img {
-		width: 100%;
-		height: 100%;
-	}
-}
-.bc-player {
-	text-align: right;
-	background: white;
-	iframe {
-		display: inline-block;
-		margin: auto;
-		width: 700px;
-	}
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 101;
-}
+
 #navbar {
-	$height: 60px;
+	$height: $navbar-height;
 	margin: auto -$flame-gutter;
 	z-index: 100;
 	height: $height;
@@ -201,28 +221,69 @@ h1, h2, h3, h4 {
 	// border-bottom: 3px solid $beuce-dark;
 	.links {
 		margin: 0;
-		// margin-left: 14rem;
+		margin-left: 14rem;
 		padding: 0 0rem 0 2rem;
+		@include breakpoint(480) {
+			margin: 0;
+			// text-align: center;
+		}
 		// display: inline-block;
 		li {
-			display: inline-block;
+			vertical-align: middle;
 		}
-		a {
-			@include transition(opacity 300ms, color 300ms, background-color 300ms);
-			text-transform: uppercase;
-			font-weight: 100;
-			font-size: 6rem*2.6/8;
-			font-family: $font-display;
-			display: block;
-			height: $height;
-			line-height: $height;
-			color: white;
-			text-decoration: none;
-			padding: 0 2.5rem;
-			&:hover {
-				background-color: $beuce-dark;
-				color: $flame-yellow;
+		li.link {
+			display: inline-block;
+			a {
+				@include transition(opacity 300ms, color 300ms, background-color 300ms);
+				text-transform: uppercase;
+				font-weight: 100;
+				font-size: 6rem*2.6/8;
+				font-family: $font-display;
+				display: block;
+				height: $height;
+				line-height: $height;
+				color: white;
+				text-decoration: none;
+				padding: 0 2.5rem;
+				&:hover {
+					background-color: $beuce-dark;
+					color: $flame-yellow;
+				}
+				@include breakpoint(480) {
+					padding: 0 1rem;
+				}
 			}
+		}
+	}
+
+	#main-logo {
+		$size: $main-logo-size;
+		@include transition(transform 100ms);
+		@include transform-origin(50%, 50%);
+		z-index: 200;
+		position: absolute;
+		top: 50%;
+		left: 30px;
+		// margin-left: -$size/2;
+		margin-top: -$size/2;
+		width: $size;
+		height: $size;
+		display: inline-block;
+		box-shadow: 0 0 3px rgba(white, 0.2);
+		&:hover {
+			@include transform(scale(1.15, 1.15));
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		@include breakpoint(480) {
+			position: static;
+			display: inline-block;
+			margin-top: 0;
+			margin-right: 2rem;
+			height: $navbar-height;
+			width: $navbar-height;
 		}
 	}
 }
@@ -273,4 +334,26 @@ h1, h2, h3, h4 {
 	.video {
 		margin: 3.0rem;
 	}
+}
+
+.news-list {
+
+}
+
+.news-item {
+	margin: 3rem auto;
+	padding: 1rem 0;
+
+	border-top: 1px solid $beuce-less-light;
+	.title {
+
+	}
+	.date {
+		margin: 0;
+		font-weight: 100;
+	}
+}
+
+.cashmusic_embed {
+	// height: 120px;
 }

@@ -1,16 +1,19 @@
 extends _layout/split.jade
 
 block banner
-	.theme-default.slider-container
+	//- .theme-default.slider-container
 		.ribbon
 		.slider.slider-main
 			for i in [1,2,3,4,5,6,7,8,9,10]
 				img(src="images/slider/#{ i }.jpg")
 
 block content_left
-	h1 CONTACT
+	.align-center
+		h1.page-title CONTACT
 
-	p mrbmusicofficial@gmail.com
+		p 
+			| For booking and other inquiries, email  
+			a(href="mrbmusicofficial@gmail.com") mrbmusicofficial@gmail.com
 
 block content_right
 

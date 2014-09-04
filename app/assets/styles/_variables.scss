@@ -1,12 +1,17 @@
 
 $beuce: #dac290;
 $beuce-light: #f7ecd8;
+$beuce-less-light: #dbd1c0;
 $beuce-dark: #8c8066;
 
-$juice-light: #e7e485;
+$juice-light: #e7e29a;
 
 $flame-orange: #ffa400;
 $flame-yellow: #fdb71a;
+
+$text-color: #6c675e;
+$link-color: $flame-yellow;
+$link-hover-color: #bd5c28;
 
 $bg-color: #1f1e1b;
 
@@ -15,4 +20,14 @@ $flame-gutter: 10px;
 $font-sans: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 $font-display: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
 
-$main-logo-size: 120px;
+$main-logo-size: 10.0rem;
+$navbar-height: 6.0rem;
+
+$content-left-width: 850px;
+$content-right-width: 320px;
+
+$content-left-width-1: 700px;
+$content-right-width-1: 320px;
+
+$content-left-padding: 25px;
+$content-right-padding: 15px;

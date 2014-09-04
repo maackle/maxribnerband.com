@@ -2,7 +2,9 @@ extends base.jade
 
 block content
 	#split-content.content-row
+		.content-left
+			.inner
+				block content_left
 		.content-right
 			block content_right
-		.content-left
-			block content_left
+				include ../_partials/sidebar.jade

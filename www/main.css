@@ -239,8 +239,20 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 768px) {
+  /* line 11, ../app/assets/styles/main.scss */
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 11, ../app/assets/styles/main.scss */
+  html {
+    font-size: 40%;
+  }
+}
 
-/* line 15, ../app/assets/styles/main.scss */
+/* line 21, ../app/assets/styles/main.scss */
 body {
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   background: #1f1e1b url(images/bg-juice-full.jpg) no-repeat center;
@@ -250,60 +262,87 @@ body {
   margin: 0;
   font-size: 1.6rem;
   text-align: center;
+  color: #6c675e;
 }
 
-/* line 26, ../app/assets/styles/main.scss */
+/* line 33, ../app/assets/styles/main.scss */
 img, iframe {
   max-width: 100%;
 }
 
-/* line 30, ../app/assets/styles/main.scss */
+/* line 37, ../app/assets/styles/main.scss */
 ul {
   padding: 0;
   list-style: none;
 }
 
-/* line 35, ../app/assets/styles/main.scss */
+/* line 42, ../app/assets/styles/main.scss */
 h1, h2, h3, h4 {
   font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
 }
 
-/* line 39, ../app/assets/styles/main.scss */
+/* line 47, ../app/assets/styles/main.scss */
+a:link, a:visited {
+  color: #fdb71a;
+  text-decoration: none;
+}
+/* line 50, ../app/assets/styles/main.scss */
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
+/* line 55, ../app/assets/styles/main.scss */
+.align-center {
+  text-align: center;
+  margin: inherit auto;
+}
+
+/* line 60, ../app/assets/styles/main.scss */
 .flame-underline {
   padding: 1rem 0;
+  margin-bottom: 1rem;
   border-bottom: 1px solid #fdb71a;
 }
 
-/* line 45, ../app/assets/styles/main.scss */
+/* line 67, ../app/assets/styles/main.scss */
 .constrain-width {
   max-width: 100%;
 }
 
-/* line 49, ../app/assets/styles/main.scss */
+/* line 71, ../app/assets/styles/main.scss */
 .container {
   margin: auto;
   text-align: left;
   position: relative;
+  min-width: 320px;
 }
 
-/* line 58, ../app/assets/styles/main.scss */
+/* line 81, ../app/assets/styles/main.scss */
 .page-title {
   text-align: center;
+  font-size: 6rem;
+  font-weight: 100;
+  margin: 2.5rem auto 2.5rem;
   text-transform: uppercase;
 }
+/* line 88, ../app/assets/styles/main.scss */
+.page-title.big-margin {
+  margin: 5rem auto;
+}
 
-/* line 65, ../app/assets/styles/main.scss */
+/* line 93, ../app/assets/styles/main.scss */
 .flame-wrapper {
   position: relative;
   margin: 4rem auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 65, ../app/assets/styles/main.scss */
+  /* line 93, ../app/assets/styles/main.scss */
   .flame-wrapper {
-    margin: 0 20px;
+    margin: inherit 20px;
   }
 }
-/* line 73, ../app/assets/styles/main.scss */
+/* line 101, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-strip {
   display: none;
   position: absolute;
@@ -311,75 +350,113 @@ h1, h2, h3, h4 {
   pointer-events: none;
   z-index: 110;
 }
-/* line 80, ../app/assets/styles/main.scss */
+/* line 108, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-left {
   left: -33px;
 }
-/* line 83, ../app/assets/styles/main.scss */
+/* line 111, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-right {
   right: -45px;
 }
 
-/* line 88, ../app/assets/styles/main.scss */
+/* line 116, ../app/assets/styles/main.scss */
 .flame-wrapper, .container {
   max-width: 1200px;
 }
 
-/* line 93, ../app/assets/styles/main.scss */
+/* line 121, ../app/assets/styles/main.scss */
 .main-container {
   background: #f7ecd8;
   min-height: 90%;
 }
 
-/* line 99, ../app/assets/styles/main.scss */
+/* line 127, ../app/assets/styles/main.scss */
 .slider-container + .main-container {
   padding-top: 0;
 }
 
-/* line 103, ../app/assets/styles/main.scss */
+/* line 131, ../app/assets/styles/main.scss */
 .full-justify {
   text-align: justify;
 }
-/* line 106, ../app/assets/styles/main.scss */
+/* line 134, ../app/assets/styles/main.scss */
 .full-justify:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 113, ../app/assets/styles/main.scss */
+/* line 141, ../app/assets/styles/main.scss */
 #full-content {
   padding: 1.5rem;
 }
 
-/* line 117, ../app/assets/styles/main.scss */
+/* line 145, ../app/assets/styles/main.scss */
 .content-row {
+  overflow: hidden;
+  *zoom: 1;
   width: 100%;
-  height: 100%;
 }
-/* line 122, ../app/assets/styles/main.scss */
+/* line 150, ../app/assets/styles/main.scss */
 .content-row .content-left {
-  width: 66%;
-  padding: 2.5rem 1.5rem;
+  width: 850px;
+  float: left;
+  padding: 2.5rem 25px;
+  margin: auto;
 }
-/* line 128, ../app/assets/styles/main.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 150, ../app/assets/styles/main.scss */
+  .content-row .content-left {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* line 150, ../app/assets/styles/main.scss */
+  .content-row .content-left {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 150, ../app/assets/styles/main.scss */
+  .content-row .content-left {
+    width: 368px;
+  }
+}
+/* line 170, ../app/assets/styles/main.scss */
 .content-row .content-right {
   float: right;
-  width: 33%;
-  background: #e7e485;
-  padding: 2.5rem 1.5rem;
+  width: 320px;
+  background: #e7e29a;
+  padding: 2.5rem 15px;
+  overflow-y: visible;
+}
+/* line 179, ../app/assets/styles/main.scss */
+.content-row .content-left, .content-row .content-right {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  /* line 179, ../app/assets/styles/main.scss */
+  .content-row .content-left, .content-row .content-right {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
-/* line 138, ../app/assets/styles/main.scss */
+/* line 188, ../app/assets/styles/main.scss */
+.sidebar-section {
+  margin: 2rem auto 4rem;
+}
+
+/* line 192, ../app/assets/styles/main.scss */
 .slider-container {
   z-index: 0;
   position: relative;
 }
-/* line 142, ../app/assets/styles/main.scss */
+/* line 196, ../app/assets/styles/main.scss */
 .slider-container .nivoSlider {
   margin: 0 auto;
 }
-/* line 146, ../app/assets/styles/main.scss */
+/* line 200, ../app/assets/styles/main.scss */
 .slider-container .nivo-controlNav {
   position: absolute;
   bottom: 1rem;
@@ -387,80 +464,41 @@ h1, h2, h3, h4 {
   z-index: 99;
 }
 
-/* line 155, ../app/assets/styles/main.scss */
+/* line 209, ../app/assets/styles/main.scss */
 .slider-main img {
   width: 100%;
 }
 
-/* line 157, ../app/assets/styles/main.scss */
-#main-logo {
-  -moz-transition: -moz-transform 100ms;
-  -o-transition: -o-transform 100ms;
-  -webkit-transition: -webkit-transform 100ms;
-  transition: transform 100ms;
-  -moz-transform-origin: 50% 0;
-  -ms-transform-origin: 50% 0;
-  -webkit-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120px;
-  height: 120px;
-  margin-left: -60px;
-  margin-top: -60px;
-  display: inline-block;
-  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
-}
-/* line 171, ../app/assets/styles/main.scss */
-#main-logo:hover {
-  -moz-transform: scale(1.15, 1.15);
-  -ms-transform: scale(1.15, 1.15);
-  -webkit-transform: scale(1.15, 1.15);
-  transform: scale(1.15, 1.15);
-}
-/* line 174, ../app/assets/styles/main.scss */
-#main-logo img {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 179, ../app/assets/styles/main.scss */
-.bc-player {
-  text-align: right;
-  background: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 101;
-}
-/* line 182, ../app/assets/styles/main.scss */
-.bc-player iframe {
-  display: inline-block;
-  margin: auto;
-  width: 700px;
-}
-
-/* line 192, ../app/assets/styles/main.scss */
+/* line 212, ../app/assets/styles/main.scss */
 #navbar {
   margin: auto-10px;
   z-index: 100;
-  height: 60px;
+  height: 6rem;
   background: #222;
   position: relative;
 }
-/* line 202, ../app/assets/styles/main.scss */
+/* line 222, ../app/assets/styles/main.scss */
 #navbar .links {
   margin: 0;
+  margin-left: 14rem;
   padding: 0 0rem 0 2rem;
 }
-/* line 207, ../app/assets/styles/main.scss */
+@media only screen and (max-width: 480px) {
+  /* line 222, ../app/assets/styles/main.scss */
+  #navbar .links {
+    margin: 0;
+  }
+}
+/* line 231, ../app/assets/styles/main.scss */
 #navbar .links li {
+  vertical-align: middle;
+}
+/* line 234, ../app/assets/styles/main.scss */
+#navbar .links li.link {
   display: inline-block;
 }
-/* line 210, ../app/assets/styles/main.scss */
-#navbar .links a {
+/* line 236, ../app/assets/styles/main.scss */
+#navbar .links li.link a {
   -moz-transition: opacity 300ms, color 300ms, background-color 300ms;
   -o-transition: opacity 300ms, color 300ms, background-color 300ms;
   -webkit-transition: opacity 300ms, color 300ms, background-color 300ms;
@@ -470,54 +508,103 @@ h1, h2, h3, h4 {
   font-size: 1.95rem;
   font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
   display: block;
-  height: 60px;
-  line-height: 60px;
+  height: 6rem;
+  line-height: 6rem;
   color: white;
   text-decoration: none;
   padding: 0 2.5rem;
 }
-/* line 222, ../app/assets/styles/main.scss */
-#navbar .links a:hover {
+/* line 248, ../app/assets/styles/main.scss */
+#navbar .links li.link a:hover {
   background-color: #8c8066;
   color: #fdb71a;
 }
+@media only screen and (max-width: 480px) {
+  /* line 236, ../app/assets/styles/main.scss */
+  #navbar .links li.link a {
+    padding: 0 1rem;
+  }
+}
+/* line 259, ../app/assets/styles/main.scss */
+#navbar #main-logo {
+  -moz-transition: -moz-transform 100ms;
+  -o-transition: -o-transform 100ms;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  margin-top: -5rem;
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+}
+/* line 273, ../app/assets/styles/main.scss */
+#navbar #main-logo:hover {
+  -moz-transform: scale(1.15, 1.15);
+  -ms-transform: scale(1.15, 1.15);
+  -webkit-transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
+}
+/* line 276, ../app/assets/styles/main.scss */
+#navbar #main-logo img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 259, ../app/assets/styles/main.scss */
+  #navbar #main-logo {
+    position: static;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+    height: 6rem;
+    width: 6rem;
+  }
+}
 
-/* line 230, ../app/assets/styles/main.scss */
+/* line 291, ../app/assets/styles/main.scss */
 #max-horn {
   width: 300px;
   position: absolute;
   top: 0;
   left: -60px;
 }
-/* line 236, ../app/assets/styles/main.scss */
+/* line 297, ../app/assets/styles/main.scss */
 #max-horn .logo {
   position: static;
   padding: 2rem;
   width: 26rem;
 }
 
-/* line 243, ../app/assets/styles/main.scss */
+/* line 304, ../app/assets/styles/main.scss */
 .justified-grid {
   text-align: justify;
 }
-/* line 245, ../app/assets/styles/main.scss */
+/* line 306, ../app/assets/styles/main.scss */
 .justified-grid li {
   height: 100;
   display: inline-block;
 }
-/* line 249, ../app/assets/styles/main.scss */
+/* line 310, ../app/assets/styles/main.scss */
 .justified-grid .last {
   content: '';
   width: 100%;
   display: inline-block;
 }
-/* line 254, ../app/assets/styles/main.scss */
+/* line 315, ../app/assets/styles/main.scss */
 .justified-grid img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 261, ../app/assets/styles/main.scss */
+/* line 322, ../app/assets/styles/main.scss */
 .image-gallery img {
   -moz-transition: opacity 150ms;
   -o-transition: opacity 150ms;
@@ -525,17 +612,29 @@ h1, h2, h3, h4 {
   transition: opacity 150ms;
   opacity: 0.8;
 }
-/* line 264, ../app/assets/styles/main.scss */
+/* line 325, ../app/assets/styles/main.scss */
 .image-gallery img:hover {
   opacity: 1;
 }
 
-/* line 270, ../app/assets/styles/main.scss */
+/* line 331, ../app/assets/styles/main.scss */
 .video-gallery {
   text-align: center;
   margin: auto;
 }
-/* line 273, ../app/assets/styles/main.scss */
+/* line 334, ../app/assets/styles/main.scss */
 .video-gallery .video {
   margin: 3.0rem;
+}
+
+/* line 343, ../app/assets/styles/main.scss */
+.news-item {
+  margin: 3rem auto;
+  padding: 1rem 0;
+  border-top: 1px solid #dbd1c0;
+}
+/* line 351, ../app/assets/styles/main.scss */
+.news-item .date {
+  margin: 0;
+  font-weight: 100;
 }
