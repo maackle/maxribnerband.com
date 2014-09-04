@@ -1,12 +1,15 @@
+
 nav#navbar
+	#main-logo
+		a(href="/"): img(src="images/max-ribner-band-logo-w-180.png")
 	.container
-		.logo
-			a(href="/"): img(src="images/max-ribner-band-logo-bk.png")
-		ul.links.full-justify
-			li: a(href="#") Dream Show
-			li: a(href="#") Max
-			li: a(href="#") Music
-			li: a(href="#") Press
-			li: a(href="/gallery.html") Gallery
-			li: a(href="#") Youth
-			li: a(href="#") Contact
+		//- ul.links.full-justify
+		ul.links
+			li: a.x-silo(href="/dream-show.html") Dream Show
+			//- li: a(href="#") Max
+			//- li: a(href="#") Music
+			//- li: a(href="#") Press
+			li: a.x-silo(href="/family.html") Family
+			//- li: a(href="#") Youth
+			li: a.x-silo(href="/contact.html") Contact
+			//- <iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=638732945/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://mrbnation.bandcamp.com/album/here-in-spirit">Here In Spirit by Max Ribner Band</a></iframe>

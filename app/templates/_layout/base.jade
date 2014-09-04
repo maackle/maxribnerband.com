@@ -3,27 +3,36 @@ html
 	head
 		title MRB
 
+		//- link(rel="stylesheet", href="vendor/soundcloud-player/css/sc-player-minimal.css")
+		link(rel="stylesheet", href="/styles/sc-player.css")
+
 		link(rel="stylesheet", href="bower/nivo-slider/nivo-slider.css")
 		link(rel="stylesheet", href="bower/nivo-slider/themes/default/default.css")
 		//- link(rel="stylesheet", href="bower/colorbox/example3/colorbox.css")
 		link(rel="stylesheet", href="bower/Justified-Gallery/dist/css/justifiedGallery.min.css")
 		link(rel="stylesheet", href="main.css")
+
 	body
 		block body
 			#root
 				.flame-wrapper
-					.flame-left
-					.flame-right
 					block navbar
 						include ../_partials/navbar.jade
-					block banner
-					block outer_content
-						.container.main-container
-							block content
+					
+					#silo-root
+						block banner
+						block outer_content
+							.container.main-container
+								block content
+						img.flame-strip.flame-left(src="/images/flame-left.png")
+						img.flame-strip.flame-right(src="/images/flame-right.png")
 
 		script(src="bower/jquery/dist/jquery.min.js")
 		script(src="bower/nivo-slider/jquery.nivo.slider.pack.js")
 		script(src="bower/Justified-Gallery/dist/js/jquery.justifiedGallery.min.js")
 		script(src="bower/colorbox/jquery.colorbox-min.js")
+
+		script(src="vendor/soundcloud-player/js/sc-player.js")
+		script(src="vendor/soundcloud-player/js/soundcloud.player.api.js")
 
 		script(src="scripts/main.js")

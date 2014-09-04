@@ -1,0 +1,96 @@
+.sc-pause,
+.sc-info h4,
+.sc-info p,
+.sc-info-close,
+.sc-info-toggle,
+.sc-scrubber,
+ol.sc-trackslist,
+ol.sc-artwork-list {
+	display: none;
+}
+
+.sc-player {
+	position:relative;
+	top: 2px;
+}
+
+.sc-controls {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sc-info {
+	position: absolute;
+	top: 26px;
+	left: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: none;
+}
+
+#audio-player .playing .sc-info {
+	display: block;
+}
+
+.sc-info a {
+	color: #3c3c3c;
+}
+
+
+.sc-prev,
+.sc-play,
+.sc-next {
+	width: 20px;
+	height: 19px;
+	display: inline-block;
+	text-indent: -99999em;
+	background-image: url(../images/sprites.png);
+}
+
+.sc-prev,
+.sc-play {
+	margin-right: 5px;
+}
+
+.sc-prev {
+	background-position: -1px -83px;
+}
+
+.sc-play {
+	background-position: -84px -83px;
+}
+
+#audio-player .playing .sc-play {
+	background-position: -27px -83px;	
+}
+
+.sc-next {
+	background-position: -57px -83px;
+}
+
+.sc-prev:hover {
+	background-position: -1px -113px;
+}
+
+.sc-play:hover {
+	background-position: -84px -113px;
+}
+
+#audio-player .playing .sc-play:hover {
+	background-position: -27px -113px;	
+}
+
+.sc-next:hover {
+	background-position: -57px -113px;
+}
+
+
+
+
+.sc-player-engine-container {
+	visibility: hidden;
+	position: absolute;
+	top: -999999em;
+	left: -999999em;
+}

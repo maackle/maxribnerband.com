@@ -1,0 +1,38 @@
+extends _layout/full.jade
+
+block banner
+
+block content_main
+	h1.page-title FAMILY
+
+	.image-gallery
+
+		a(href="images/gallery/Max Ribner Color-1.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Color-1.jpg")
+		a(href="images/gallery/Max Ribner Color-2.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Color-2.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-9.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-9.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-34.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-34.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-66.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-66.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-70.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-70.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-75.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-75.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-77.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-77.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-81.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-81.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-86.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-86.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-89.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-89.jpg")
+		a(href="images/gallery/Max Ribner Dream Show-90.jpg", rel="gallery"): img(src="images/gallery/Max Ribner Dream Show-90.jpg")
+
+		a(href="images/slider/1.jpg", rel="gallery"): img(src="images/slider/1.jpg")
+		a(href="images/slider/2.jpg", rel="gallery"): img(src="images/slider/2.jpg")
+		a(href="images/slider/3.jpg", rel="gallery"): img(src="images/slider/3.jpg")
+		a(href="images/slider/4.jpg", rel="gallery"): img(src="images/slider/4.jpg")
+		a(href="images/slider/5.jpg", rel="gallery"): img(src="images/slider/5.jpg")
+		a(href="images/slider/6.jpg", rel="gallery"): img(src="images/slider/6.jpg")
+		a(href="images/slider/7.jpg", rel="gallery"): img(src="images/slider/7.jpg")
+		a(href="images/slider/8.jpg", rel="gallery"): img(src="images/slider/8.jpg")
+		a(href="images/slider/9.jpg", rel="gallery"): img(src="images/slider/9.jpg")
+		a(href="images/slider/10.jpg", rel="gallery"): img(src="images/slider/10.jpg")
+		br.last
+
+	.video-gallery
+		for code in ['QJqo_gUpkoI', 'GJq7fWjQCvs',  'fl2fcMMCHjQ',  'XPucAWuchV8',  'LxPCzdwXZLk',  'ftJaMnlZayo',  'igqWQBTptM4',  '2_zirmGJL6U']
+			.video
+				<iframe width="560" height="315" src="//www.youtube.com/embed/#{ code }?rel=0" frameborder="0" allowfullscreen></iframe>

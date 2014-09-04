@@ -3,6 +3,7 @@
     The following CSS is consistent between example themes and should not be altered.
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700);
 /* line 5, ../app/assets/styles/_colorbox.scss */
 #colorbox, #cboxOverlay, #cboxWrapper {
   position: absolute;
@@ -234,125 +235,151 @@
   background-position: -75px -25px;
 }
 
-/* line 10, ../app/assets/styles/main.scss */
+/* line 11, ../app/assets/styles/main.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 14, ../app/assets/styles/main.scss */
+/* line 15, ../app/assets/styles/main.scss */
 body {
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background: #1f1e1b;
+  background: #1f1e1b url(images/bg-juice-full.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
   font-size: 1.6rem;
   text-align: center;
 }
 
-/* line 23, ../app/assets/styles/main.scss */
+/* line 26, ../app/assets/styles/main.scss */
 img, iframe {
   max-width: 100%;
 }
 
-/* line 27, ../app/assets/styles/main.scss */
+/* line 30, ../app/assets/styles/main.scss */
 ul {
   padding: 0;
   list-style: none;
 }
 
-/* line 32, ../app/assets/styles/main.scss */
+/* line 35, ../app/assets/styles/main.scss */
+h1, h2, h3, h4 {
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* line 39, ../app/assets/styles/main.scss */
+.flame-underline {
+  padding: 1rem 0;
+  border-bottom: 1px solid #fdb71a;
+}
+
+/* line 45, ../app/assets/styles/main.scss */
 .constrain-width {
   max-width: 100%;
 }
 
-/* line 36, ../app/assets/styles/main.scss */
+/* line 49, ../app/assets/styles/main.scss */
 .container {
   margin: auto;
   text-align: left;
   position: relative;
 }
 
-/* line 42, ../app/assets/styles/main.scss */
+/* line 58, ../app/assets/styles/main.scss */
 .page-title {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 49, ../app/assets/styles/main.scss */
+/* line 65, ../app/assets/styles/main.scss */
 .flame-wrapper {
-  padding: 0 10px;
-  background: url(images/bg-strip-1-v.jpg);
-  margin: auto;
+  position: relative;
+  margin: 4rem auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 49, ../app/assets/styles/main.scss */
+  /* line 65, ../app/assets/styles/main.scss */
   .flame-wrapper {
     margin: 0 20px;
   }
 }
+/* line 73, ../app/assets/styles/main.scss */
+.flame-wrapper .flame-strip {
+  display: none;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  z-index: 110;
+}
+/* line 80, ../app/assets/styles/main.scss */
+.flame-wrapper .flame-left {
+  left: -33px;
+}
+/* line 83, ../app/assets/styles/main.scss */
+.flame-wrapper .flame-right {
+  right: -45px;
+}
 
-/* line 58, ../app/assets/styles/main.scss */
+/* line 88, ../app/assets/styles/main.scss */
 .flame-wrapper, .container {
   max-width: 1200px;
 }
 
-/* line 63, ../app/assets/styles/main.scss */
+/* line 93, ../app/assets/styles/main.scss */
 .main-container {
   background: #f7ecd8;
   min-height: 90%;
 }
 
-/* line 69, ../app/assets/styles/main.scss */
+/* line 99, ../app/assets/styles/main.scss */
 .slider-container + .main-container {
   padding-top: 0;
 }
 
-/* line 73, ../app/assets/styles/main.scss */
+/* line 103, ../app/assets/styles/main.scss */
 .full-justify {
   text-align: justify;
 }
-/* line 76, ../app/assets/styles/main.scss */
+/* line 106, ../app/assets/styles/main.scss */
 .full-justify:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 83, ../app/assets/styles/main.scss */
+/* line 113, ../app/assets/styles/main.scss */
 #full-content {
   padding: 1.5rem;
 }
 
-/* line 87, ../app/assets/styles/main.scss */
+/* line 117, ../app/assets/styles/main.scss */
 .content-row {
-  display: table;
   width: 100%;
   height: 100%;
 }
-/* line 92, ../app/assets/styles/main.scss */
+/* line 122, ../app/assets/styles/main.scss */
 .content-row .content-left {
-  display: table-cell;
   width: 66%;
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
-/* line 98, ../app/assets/styles/main.scss */
+/* line 128, ../app/assets/styles/main.scss */
 .content-row .content-right {
-  display: table-cell;
+  float: right;
   width: 33%;
-  background: #b7ad9b;
-  padding: 1.5rem;
+  background: #e7e485;
+  padding: 2.5rem 1.5rem;
 }
 
-/* line 107, ../app/assets/styles/main.scss */
+/* line 138, ../app/assets/styles/main.scss */
 .slider-container {
   z-index: 0;
   position: relative;
 }
-/* line 111, ../app/assets/styles/main.scss */
+/* line 142, ../app/assets/styles/main.scss */
 .slider-container .nivoSlider {
   margin: 0 auto;
 }
-/* line 115, ../app/assets/styles/main.scss */
+/* line 146, ../app/assets/styles/main.scss */
 .slider-container .nivo-controlNav {
   position: absolute;
   bottom: 1rem;
@@ -360,111 +387,137 @@ ul {
   z-index: 99;
 }
 
-/* line 124, ../app/assets/styles/main.scss */
+/* line 155, ../app/assets/styles/main.scss */
 .slider-main img {
   width: 100%;
 }
 
-/* line 126, ../app/assets/styles/main.scss */
-#navbar {
-  margin: auto-10px;
-  z-index: 100;
-  height: 6rem;
-  background: #b7ad9b;
-  background-size: contain;
-  position: relative;
-  border-bottom: 6px double black;
-}
-/* line 135, ../app/assets/styles/main.scss */
-#navbar .logo {
+/* line 157, ../app/assets/styles/main.scss */
+#main-logo {
   -moz-transition: -moz-transform 100ms;
   -o-transition: -o-transform 100ms;
   -webkit-transition: -webkit-transform 100ms;
   transition: transform 100ms;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  z-index: 200;
   position: absolute;
-  top: 0;
-  left: -10px;
-  width: 10.0rem;
-  background: black;
-  padding: 2rem;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
   display: inline-block;
-  box-shadow: 1px 1px #b7ad9b;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
-/* line 146, ../app/assets/styles/main.scss */
-#navbar .logo:hover {
-  -moz-transform: scale(1.05, 1.05);
-  -ms-transform: scale(1.05, 1.05);
-  -webkit-transform: scale(1.05, 1.05);
-  transform: scale(1.05, 1.05);
+/* line 171, ../app/assets/styles/main.scss */
+#main-logo:hover {
+  -moz-transform: scale(1.15, 1.15);
+  -ms-transform: scale(1.15, 1.15);
+  -webkit-transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
 }
-/* line 150, ../app/assets/styles/main.scss */
-#navbar .links {
-  margin: 0;
-  margin-left: 14rem;
-  padding: 0 4rem 0 2rem;
-}
-/* line 155, ../app/assets/styles/main.scss */
-#navbar .links li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-/* line 159, ../app/assets/styles/main.scss */
-#navbar .links a {
-  -moz-transition: opacity 300ms;
-  -o-transition: opacity 300ms;
-  -webkit-transition: opacity 300ms;
-  transition: opacity 300ms;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 2.25rem;
-  display: block;
-  height: 6rem;
-  line-height: 6rem;
-  color: white;
-  text-decoration: none;
-  opacity: 0.7;
-}
-/* line 170, ../app/assets/styles/main.scss */
-#navbar .links a:hover {
-  opacity: 1;
+/* line 174, ../app/assets/styles/main.scss */
+#main-logo img {
+  width: 100%;
+  height: 100%;
 }
 
-/* line 177, ../app/assets/styles/main.scss */
+/* line 179, ../app/assets/styles/main.scss */
+.bc-player {
+  text-align: right;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 101;
+}
+/* line 182, ../app/assets/styles/main.scss */
+.bc-player iframe {
+  display: inline-block;
+  margin: auto;
+  width: 700px;
+}
+
+/* line 192, ../app/assets/styles/main.scss */
+#navbar {
+  margin: auto-10px;
+  z-index: 100;
+  height: 60px;
+  background: #222;
+  position: relative;
+}
+/* line 202, ../app/assets/styles/main.scss */
+#navbar .links {
+  margin: 0;
+  padding: 0 0rem 0 2rem;
+}
+/* line 207, ../app/assets/styles/main.scss */
+#navbar .links li {
+  display: inline-block;
+}
+/* line 210, ../app/assets/styles/main.scss */
+#navbar .links a {
+  -moz-transition: opacity 300ms, color 300ms, background-color 300ms;
+  -o-transition: opacity 300ms, color 300ms, background-color 300ms;
+  -webkit-transition: opacity 300ms, color 300ms, background-color 300ms;
+  transition: opacity 300ms, color 300ms, background-color 300ms;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.95rem;
+  font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  text-decoration: none;
+  padding: 0 2.5rem;
+}
+/* line 222, ../app/assets/styles/main.scss */
+#navbar .links a:hover {
+  background-color: #8c8066;
+  color: #fdb71a;
+}
+
+/* line 230, ../app/assets/styles/main.scss */
 #max-horn {
   width: 300px;
   position: absolute;
   top: 0;
   left: -60px;
 }
-/* line 183, ../app/assets/styles/main.scss */
+/* line 236, ../app/assets/styles/main.scss */
 #max-horn .logo {
   position: static;
   padding: 2rem;
   width: 26rem;
 }
 
-/* line 190, ../app/assets/styles/main.scss */
+/* line 243, ../app/assets/styles/main.scss */
 .justified-grid {
   text-align: justify;
 }
-/* line 192, ../app/assets/styles/main.scss */
+/* line 245, ../app/assets/styles/main.scss */
 .justified-grid li {
   height: 100;
   display: inline-block;
 }
-/* line 196, ../app/assets/styles/main.scss */
+/* line 249, ../app/assets/styles/main.scss */
 .justified-grid .last {
   content: '';
   width: 100%;
   display: inline-block;
 }
-/* line 201, ../app/assets/styles/main.scss */
+/* line 254, ../app/assets/styles/main.scss */
 .justified-grid img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 208, ../app/assets/styles/main.scss */
+/* line 261, ../app/assets/styles/main.scss */
 .image-gallery img {
   -moz-transition: opacity 150ms;
   -o-transition: opacity 150ms;
@@ -472,17 +525,17 @@ ul {
   transition: opacity 150ms;
   opacity: 0.8;
 }
-/* line 211, ../app/assets/styles/main.scss */
+/* line 264, ../app/assets/styles/main.scss */
 .image-gallery img:hover {
   opacity: 1;
 }
 
-/* line 217, ../app/assets/styles/main.scss */
+/* line 270, ../app/assets/styles/main.scss */
 .video-gallery {
   text-align: center;
   margin: auto;
 }
-/* line 220, ../app/assets/styles/main.scss */
+/* line 273, ../app/assets/styles/main.scss */
 .video-gallery .video {
   margin: 3.0rem;
 }
