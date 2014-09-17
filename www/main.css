@@ -255,7 +255,7 @@ html {
 /* line 21, ../app/assets/styles/main.scss */
 body {
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background: #1f1e1b url(images/bg-juice-full.jpg) no-repeat center;
+  background: #1f1e1b url(images/bg-album.jpg) no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
   padding: 0;
