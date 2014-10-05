@@ -5,7 +5,7 @@
 @import "colorbox";
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
 
 
 html {
@@ -41,14 +41,17 @@ ul {
 
 h1, h2, h3, h4 {
 	font-family: $font-display;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 a:link, a:visited {
+	@include transition(color 200ms, background-color 200ms);
 	color: $link-color;
 	text-decoration: none;
 	&:hover {
-		text-decoration: underline;
+		// text-decoration: underline;
+		// background: $beuce-dark;
+		color: darken($link-color, 10%);
 	}
 }
 
@@ -187,6 +190,10 @@ a:link, a:visited {
 
 .sidebar-section {
 	margin: 2rem auto 4rem;
+
+	.heading {
+		border-bottom: 3px solid rgba($link-color, 1);
+	}
 }
 
 .slider-container {
@@ -236,8 +243,8 @@ a:link, a:visited {
 			a {
 				@include transition(opacity 300ms, color 300ms, background-color 300ms);
 				text-transform: uppercase;
-				font-weight: 100;
-				font-size: 6rem*2.6/8;
+				font-weight: 600;
+				font-size: 6rem*2.7/8;
 				font-family: $font-display;
 				display: block;
 				height: $height;

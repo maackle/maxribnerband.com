@@ -3,7 +3,7 @@
     The following CSS is consistent between example themes and should not be altered.
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
 /* line 5, ../app/assets/styles/_colorbox.scss */
 #colorbox, #cboxOverlay, #cboxWrapper {
   position: absolute;
@@ -279,38 +279,42 @@ ul {
 /* line 42, ../app/assets/styles/main.scss */
 h1, h2, h3, h4 {
   font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* line 47, ../app/assets/styles/main.scss */
 a:link, a:visited {
+  -moz-transition: color 200ms, background-color 200ms;
+  -o-transition: color 200ms, background-color 200ms;
+  -webkit-transition: color 200ms, background-color 200ms;
+  transition: color 200ms, background-color 200ms;
   color: #fdb71a;
   text-decoration: none;
 }
-/* line 50, ../app/assets/styles/main.scss */
+/* line 51, ../app/assets/styles/main.scss */
 a:link:hover, a:visited:hover {
-  text-decoration: underline;
+  color: #e29d02;
 }
 
-/* line 55, ../app/assets/styles/main.scss */
+/* line 58, ../app/assets/styles/main.scss */
 .align-center {
   text-align: center;
   margin: inherit auto;
 }
 
-/* line 60, ../app/assets/styles/main.scss */
+/* line 63, ../app/assets/styles/main.scss */
 .flame-underline {
   padding: 1rem 0;
   margin-bottom: 1rem;
   border-bottom: 1px solid #fdb71a;
 }
 
-/* line 67, ../app/assets/styles/main.scss */
+/* line 70, ../app/assets/styles/main.scss */
 .constrain-width {
   max-width: 100%;
 }
 
-/* line 71, ../app/assets/styles/main.scss */
+/* line 74, ../app/assets/styles/main.scss */
 .container {
   margin: auto;
   text-align: left;
@@ -318,7 +322,7 @@ a:link:hover, a:visited:hover {
   min-width: 320px;
 }
 
-/* line 81, ../app/assets/styles/main.scss */
+/* line 84, ../app/assets/styles/main.scss */
 .page-title {
   text-align: center;
   font-size: 6rem;
@@ -326,23 +330,23 @@ a:link:hover, a:visited:hover {
   margin: 2.5rem auto 2.5rem;
   text-transform: uppercase;
 }
-/* line 88, ../app/assets/styles/main.scss */
+/* line 91, ../app/assets/styles/main.scss */
 .page-title.big-margin {
   margin: 5rem auto;
 }
 
-/* line 93, ../app/assets/styles/main.scss */
+/* line 96, ../app/assets/styles/main.scss */
 .flame-wrapper {
   position: relative;
   margin: 4rem auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 93, ../app/assets/styles/main.scss */
+  /* line 96, ../app/assets/styles/main.scss */
   .flame-wrapper {
     margin: inherit 20px;
   }
 }
-/* line 101, ../app/assets/styles/main.scss */
+/* line 104, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-strip {
   display: none;
   position: absolute;
@@ -350,54 +354,54 @@ a:link:hover, a:visited:hover {
   pointer-events: none;
   z-index: 110;
 }
-/* line 108, ../app/assets/styles/main.scss */
+/* line 111, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-left {
   left: -33px;
 }
-/* line 111, ../app/assets/styles/main.scss */
+/* line 114, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-right {
   right: -45px;
 }
 
-/* line 116, ../app/assets/styles/main.scss */
+/* line 119, ../app/assets/styles/main.scss */
 .flame-wrapper, .container {
   max-width: 1200px;
 }
 
-/* line 121, ../app/assets/styles/main.scss */
+/* line 124, ../app/assets/styles/main.scss */
 .main-container {
   background: #f7ecd8;
   min-height: 90%;
 }
 
-/* line 127, ../app/assets/styles/main.scss */
+/* line 130, ../app/assets/styles/main.scss */
 .slider-container + .main-container {
   padding-top: 0;
 }
 
-/* line 131, ../app/assets/styles/main.scss */
+/* line 134, ../app/assets/styles/main.scss */
 .full-justify {
   text-align: justify;
 }
-/* line 134, ../app/assets/styles/main.scss */
+/* line 137, ../app/assets/styles/main.scss */
 .full-justify:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 141, ../app/assets/styles/main.scss */
+/* line 144, ../app/assets/styles/main.scss */
 #full-content {
   padding: 1.5rem;
 }
 
-/* line 145, ../app/assets/styles/main.scss */
+/* line 148, ../app/assets/styles/main.scss */
 .content-row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
-/* line 150, ../app/assets/styles/main.scss */
+/* line 153, ../app/assets/styles/main.scss */
 .content-row .content-left {
   width: 850px;
   float: left;
@@ -405,24 +409,24 @@ a:link:hover, a:visited:hover {
   margin: auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 150, ../app/assets/styles/main.scss */
+  /* line 153, ../app/assets/styles/main.scss */
   .content-row .content-left {
     width: 650px;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 150, ../app/assets/styles/main.scss */
+  /* line 153, ../app/assets/styles/main.scss */
   .content-row .content-left {
     width: 500px;
   }
 }
 @media only screen and (max-width: 850px) {
-  /* line 150, ../app/assets/styles/main.scss */
+  /* line 153, ../app/assets/styles/main.scss */
   .content-row .content-left {
     width: 368px;
   }
 }
-/* line 170, ../app/assets/styles/main.scss */
+/* line 173, ../app/assets/styles/main.scss */
 .content-row .content-right {
   float: right;
   width: 320px;
@@ -430,33 +434,37 @@ a:link:hover, a:visited:hover {
   padding: 2.5rem 15px;
   overflow-y: visible;
 }
-/* line 179, ../app/assets/styles/main.scss */
+/* line 182, ../app/assets/styles/main.scss */
 .content-row .content-left, .content-row .content-right {
   box-sizing: border-box;
 }
 @media only screen and (max-width: 767px) {
-  /* line 179, ../app/assets/styles/main.scss */
+  /* line 182, ../app/assets/styles/main.scss */
   .content-row .content-left, .content-row .content-right {
     width: 100%;
     max-width: 100%;
   }
 }
 
-/* line 188, ../app/assets/styles/main.scss */
+/* line 191, ../app/assets/styles/main.scss */
 .sidebar-section {
   margin: 2rem auto 4rem;
 }
+/* line 194, ../app/assets/styles/main.scss */
+.sidebar-section .heading {
+  border-bottom: 3px solid #fdb71a;
+}
 
-/* line 192, ../app/assets/styles/main.scss */
+/* line 199, ../app/assets/styles/main.scss */
 .slider-container {
   z-index: 0;
   position: relative;
 }
-/* line 196, ../app/assets/styles/main.scss */
+/* line 203, ../app/assets/styles/main.scss */
 .slider-container .nivoSlider {
   margin: 0 auto;
 }
-/* line 200, ../app/assets/styles/main.scss */
+/* line 207, ../app/assets/styles/main.scss */
 .slider-container .nivo-controlNav {
   position: absolute;
   bottom: 1rem;
@@ -464,12 +472,12 @@ a:link:hover, a:visited:hover {
   z-index: 99;
 }
 
-/* line 209, ../app/assets/styles/main.scss */
+/* line 216, ../app/assets/styles/main.scss */
 .slider-main img {
   width: 100%;
 }
 
-/* line 212, ../app/assets/styles/main.scss */
+/* line 219, ../app/assets/styles/main.scss */
 #navbar {
   margin: auto-10px;
   z-index: 100;
@@ -477,35 +485,35 @@ a:link:hover, a:visited:hover {
   background: #222;
   position: relative;
 }
-/* line 222, ../app/assets/styles/main.scss */
+/* line 229, ../app/assets/styles/main.scss */
 #navbar .links {
   margin: 0;
   margin-left: 14rem;
   padding: 0 0rem 0 2rem;
 }
 @media only screen and (max-width: 480px) {
-  /* line 222, ../app/assets/styles/main.scss */
+  /* line 229, ../app/assets/styles/main.scss */
   #navbar .links {
     margin: 0;
   }
 }
-/* line 231, ../app/assets/styles/main.scss */
+/* line 238, ../app/assets/styles/main.scss */
 #navbar .links li {
   vertical-align: middle;
 }
-/* line 234, ../app/assets/styles/main.scss */
+/* line 241, ../app/assets/styles/main.scss */
 #navbar .links li.link {
   display: inline-block;
 }
-/* line 236, ../app/assets/styles/main.scss */
+/* line 243, ../app/assets/styles/main.scss */
 #navbar .links li.link a {
   -moz-transition: opacity 300ms, color 300ms, background-color 300ms;
   -o-transition: opacity 300ms, color 300ms, background-color 300ms;
   -webkit-transition: opacity 300ms, color 300ms, background-color 300ms;
   transition: opacity 300ms, color 300ms, background-color 300ms;
   text-transform: uppercase;
-  font-weight: 100;
-  font-size: 1.95rem;
+  font-weight: 600;
+  font-size: 2.025rem;
   font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
   display: block;
   height: 6rem;
@@ -514,18 +522,18 @@ a:link:hover, a:visited:hover {
   text-decoration: none;
   padding: 0 2.5rem;
 }
-/* line 248, ../app/assets/styles/main.scss */
+/* line 255, ../app/assets/styles/main.scss */
 #navbar .links li.link a:hover {
   background-color: #8c8066;
   color: #fdb71a;
 }
 @media only screen and (max-width: 480px) {
-  /* line 236, ../app/assets/styles/main.scss */
+  /* line 243, ../app/assets/styles/main.scss */
   #navbar .links li.link a {
     padding: 0 1rem;
   }
 }
-/* line 259, ../app/assets/styles/main.scss */
+/* line 266, ../app/assets/styles/main.scss */
 #navbar #main-logo {
   -moz-transition: -moz-transform 100ms;
   -o-transition: -o-transform 100ms;
@@ -545,20 +553,20 @@ a:link:hover, a:visited:hover {
   display: inline-block;
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
-/* line 273, ../app/assets/styles/main.scss */
+/* line 280, ../app/assets/styles/main.scss */
 #navbar #main-logo:hover {
   -moz-transform: scale(1.15, 1.15);
   -ms-transform: scale(1.15, 1.15);
   -webkit-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15);
 }
-/* line 276, ../app/assets/styles/main.scss */
+/* line 283, ../app/assets/styles/main.scss */
 #navbar #main-logo img {
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 480px) {
-  /* line 259, ../app/assets/styles/main.scss */
+  /* line 266, ../app/assets/styles/main.scss */
   #navbar #main-logo {
     position: static;
     display: inline-block;
@@ -569,42 +577,42 @@ a:link:hover, a:visited:hover {
   }
 }
 
-/* line 291, ../app/assets/styles/main.scss */
+/* line 298, ../app/assets/styles/main.scss */
 #max-horn {
   width: 300px;
   position: absolute;
   top: 0;
   left: -60px;
 }
-/* line 297, ../app/assets/styles/main.scss */
+/* line 304, ../app/assets/styles/main.scss */
 #max-horn .logo {
   position: static;
   padding: 2rem;
   width: 26rem;
 }
 
-/* line 304, ../app/assets/styles/main.scss */
+/* line 311, ../app/assets/styles/main.scss */
 .justified-grid {
   text-align: justify;
 }
-/* line 306, ../app/assets/styles/main.scss */
+/* line 313, ../app/assets/styles/main.scss */
 .justified-grid li {
   height: 100;
   display: inline-block;
 }
-/* line 310, ../app/assets/styles/main.scss */
+/* line 317, ../app/assets/styles/main.scss */
 .justified-grid .last {
   content: '';
   width: 100%;
   display: inline-block;
 }
-/* line 315, ../app/assets/styles/main.scss */
+/* line 322, ../app/assets/styles/main.scss */
 .justified-grid img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 322, ../app/assets/styles/main.scss */
+/* line 329, ../app/assets/styles/main.scss */
 .image-gallery img {
   -moz-transition: opacity 150ms;
   -o-transition: opacity 150ms;
@@ -612,28 +620,28 @@ a:link:hover, a:visited:hover {
   transition: opacity 150ms;
   opacity: 0.8;
 }
-/* line 325, ../app/assets/styles/main.scss */
+/* line 332, ../app/assets/styles/main.scss */
 .image-gallery img:hover {
   opacity: 1;
 }
 
-/* line 331, ../app/assets/styles/main.scss */
+/* line 338, ../app/assets/styles/main.scss */
 .video-gallery {
   text-align: center;
   margin: auto;
 }
-/* line 334, ../app/assets/styles/main.scss */
+/* line 341, ../app/assets/styles/main.scss */
 .video-gallery .video {
   margin: 3.0rem;
 }
 
-/* line 343, ../app/assets/styles/main.scss */
+/* line 350, ../app/assets/styles/main.scss */
 .news-item {
   margin: 3rem auto;
   padding: 1rem 0;
   border-top: 1px solid #dbd1c0;
 }
-/* line 351, ../app/assets/styles/main.scss */
+/* line 358, ../app/assets/styles/main.scss */
 .news-item .date {
   margin: 0;
   font-weight: 100;
