@@ -217,38 +217,38 @@ a:link, a:visited {
 
 
 #navbar {
-	$height: $navbar-height;
+	$height: $navbar-height + $navbar-secondary-height;
 	margin: auto -$flame-gutter;
 	z-index: 100;
-	height: $height;
 	background: #222;
+	.container { text-align: left; }
+	@include breakpoint(815) {
+		.container { text-align: center; }
+
+	}
 	// background: $beuce-dark url(images/bg-juice.jpg) center;
 	// background-size: contain;
 	position: relative;
 	// border-bottom: 3px solid $beuce-dark;
+	img {
+		max-height: 100%;
+	}
 	.links {
 		margin: 0;
-		margin-left: 14rem;
-		padding: 0 0rem 0 2rem;
-		@include breakpoint(480) {
-			margin: 0;
-			// text-align: center;
-		}
-		// display: inline-block;
+		padding: 0;
+		display: inline-block;
 		li {
 			vertical-align: middle;
 		}
 		li.link {
 			display: inline-block;
 			a {
-				@include transition(opacity 300ms, color 300ms, background-color 300ms);
 				text-transform: uppercase;
 				font-weight: 600;
 				font-size: 6rem*2.7/8;
 				font-family: $font-display;
 				display: block;
-				height: $height;
-				line-height: $height;
+				
 				color: white;
 				text-decoration: none;
 				padding: 0 2.5rem;
@@ -260,7 +260,47 @@ a:link, a:visited {
 					padding: 0 1rem;
 				}
 			}
+			.icon {
+				vertical-align: middle;
+				padding: 0 0.5rem;
+				img {
+					height: 50%;
+				}
+			}
 		}
+	}
+	.links-primary {
+		$height: $navbar-height;
+		height: $height;
+		line-height: $height;
+		padding-left: 14rem;
+		text-align: left;
+		@include breakpoint(480) {
+			padding-left: 2rem;
+		}
+		li.link a {
+			@include transition(opacity 300ms, color 300ms, background-color 300ms);
+		}
+	}
+	.links-secondary {
+		$height: $navbar-height;
+		height: $height;
+		line-height: $height;
+		text-align: right;
+		margin: auto;
+		// background: black;
+		img {
+			height: 100%;
+			vertical-align: middle;
+		}
+		li.link a {
+			@include transition(opacity 300ms);
+			&:hover {
+				opacity: 0.7;
+				background: none;
+			}
+		}
+
 	}
 
 	#main-logo {
