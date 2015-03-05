@@ -7,7 +7,22 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
 
-
+.adhoc-row {
+	text-align: center;
+	margin: auto;
+}
+.half-col {
+	text-align: left;
+	width: 40%;
+	min-width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+.page-press {
+	.links {
+		font-size: 1.1em;
+	}
+}
 html {
 	font-size: 62.5%;
 	@include breakpoint(768) {
@@ -98,7 +113,7 @@ a:link, a:visited {
 	// padding: 0 $flame-gutter;
 	// background: url(images/bg-strip-1-v.jpg);
 	margin: 4rem auto;
-	@include breakpoint(1200) { 
+	@include breakpoint(1200) {
 		margin: inherit $flame-gutter * 2;
 	}
 	.flame-strip {
@@ -248,7 +263,7 @@ a:link, a:visited {
 				font-size: 6rem*2.7/8;
 				font-family: $font-display;
 				display: block;
-				
+
 				color: white;
 				text-decoration: none;
 				padding: 0 2.5rem;
