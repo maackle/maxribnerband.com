@@ -98,7 +98,7 @@ a:link, a:visited {
 	// padding: 0 $flame-gutter;
 	// background: url(images/bg-strip-1-v.jpg);
 	margin: 4rem auto;
-	@include breakpoint(1200) { 
+	@include breakpoint(1200) {
 		margin: inherit $flame-gutter * 2;
 	}
 	.flame-strip {
@@ -248,7 +248,7 @@ a:link, a:visited {
 				font-size: 6rem*2.7/8;
 				font-family: $font-display;
 				display: block;
-				
+
 				color: white;
 				text-decoration: none;
 				padding: 0 2.5rem;
@@ -381,6 +381,10 @@ a:link, a:visited {
 	.video {
 		margin: 3.0rem;
 	}
+}
+
+.twitter-feed {
+	text-align: center;
 }
 
 .news-list {

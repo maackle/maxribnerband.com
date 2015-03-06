@@ -689,13 +689,18 @@ a:link:hover, a:visited:hover {
   margin: 3.0rem;
 }
 
-/* line 390, ../app/assets/styles/main.scss */
+/* line 386, ../app/assets/styles/main.scss */
+.twitter-feed {
+  text-align: center;
+}
+
+/* line 394, ../app/assets/styles/main.scss */
 .news-item {
   margin: 3rem auto;
   padding: 1rem 0;
   border-top: 1px solid #dbd1c0;
 }
-/* line 398, ../app/assets/styles/main.scss */
+/* line 402, ../app/assets/styles/main.scss */
 .news-item .date {
   margin: 0;
   font-weight: 100;
