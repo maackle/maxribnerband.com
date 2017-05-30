@@ -399,6 +399,11 @@ a:link:hover, a:visited:hover {
   padding-top: 0;
 }
 
+/* line 149, ../app/assets/styles/main.scss */
+.slider-main {
+  max-height: 350px;
+}
+
 /* line 153, ../app/assets/styles/main.scss */
 .full-justify {
   text-align: justify;
