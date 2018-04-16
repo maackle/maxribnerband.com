@@ -137,7 +137,8 @@ a:link, a:visited {
 }
 
 .main-container {
-	background: $beuce-light;
+	background: $dk-gray;
+	color: $beuce-light;
 	min-height: 90%;
 	// padding-top: 60px;  // push down content when main content is directly under navbar
 }
@@ -193,9 +194,14 @@ a:link, a:visited {
 		// display: table-cell;
 		float: right;
 		width: $content-right-width;
-		background: $juice-light;
+		background: $flame-yellow;
+		color: #222;
 		padding: 2.5rem $content-right-padding;
 		overflow-y: visible;
+
+		a {
+			color: white;
+		}
 	}
 
 	.content-left, .content-right {
@@ -211,7 +217,7 @@ a:link, a:visited {
 	margin: 2rem auto 4rem;
 
 	.heading {
-		border-bottom: 3px solid rgba($link-color, 1);
+		border-bottom: 3px solid rgba($flame-orange, 1);
 	}
 }
 
@@ -239,7 +245,7 @@ a:link, a:visited {
 	$height: $navbar-height + $navbar-secondary-height;
 	margin: auto -$flame-gutter;
 	z-index: 100;
-	background: #222;
+	background: #000;
 	.container { text-align: left; }
 	@include breakpoint(815) {
 		.container { text-align: center; }
@@ -296,7 +302,6 @@ a:link, a:visited {
 		// height: $height;
 		line-height: $height;
 		text-align: left;
-		background: #222;
 		li.link a {
 			@include transition(opacity 300ms, color 300ms, background-color 300ms);
 		}
@@ -309,7 +314,6 @@ a:link, a:visited {
 		margin: auto;
 		margin-left: 2rem;
 		text-align: center;
-		background: #222;
 		// background: black;
 		img {
 			height: 100%;
