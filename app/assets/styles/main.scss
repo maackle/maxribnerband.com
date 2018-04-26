@@ -56,7 +56,8 @@ ul {
 
 h1, h2, h3, h4 {
 	font-family: $font-display;
-	font-weight: 700;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 a:link, a:visited {

@@ -299,10 +299,11 @@ ul {
 /* line 57, ../app/assets/styles/main.scss */
 h1, h2, h3, h4 {
   font-family: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-/* line 62, ../app/assets/styles/main.scss */
+/* line 63, ../app/assets/styles/main.scss */
 a:link, a:visited {
   -moz-transition: color 200ms, background-color 200ms;
   -o-transition: color 200ms, background-color 200ms;
@@ -311,30 +312,30 @@ a:link, a:visited {
   color: #fdb71a;
   text-decoration: none;
 }
-/* line 66, ../app/assets/styles/main.scss */
+/* line 67, ../app/assets/styles/main.scss */
 a:link:hover, a:visited:hover {
   color: #e29d02;
 }
 
-/* line 73, ../app/assets/styles/main.scss */
+/* line 74, ../app/assets/styles/main.scss */
 .align-center {
   text-align: center;
   margin: inherit auto;
 }
 
-/* line 78, ../app/assets/styles/main.scss */
+/* line 79, ../app/assets/styles/main.scss */
 .flame-underline {
   padding: 1rem 0;
   margin-bottom: 1rem;
   border-bottom: 1px solid #fdb71a;
 }
 
-/* line 85, ../app/assets/styles/main.scss */
+/* line 86, ../app/assets/styles/main.scss */
 .constrain-width {
   max-width: 100%;
 }
 
-/* line 89, ../app/assets/styles/main.scss */
+/* line 90, ../app/assets/styles/main.scss */
 .container {
   margin: auto;
   text-align: left;
@@ -342,7 +343,7 @@ a:link:hover, a:visited:hover {
   min-width: 320px;
 }
 
-/* line 99, ../app/assets/styles/main.scss */
+/* line 100, ../app/assets/styles/main.scss */
 .page-title {
   text-align: center;
   font-size: 6rem;
@@ -350,23 +351,23 @@ a:link:hover, a:visited:hover {
   margin: 2.5rem auto 2.5rem;
   text-transform: uppercase;
 }
-/* line 106, ../app/assets/styles/main.scss */
+/* line 107, ../app/assets/styles/main.scss */
 .page-title.big-margin {
   margin: 5rem auto;
 }
 
-/* line 111, ../app/assets/styles/main.scss */
+/* line 112, ../app/assets/styles/main.scss */
 .flame-wrapper {
   position: relative;
   margin: 4rem auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 111, ../app/assets/styles/main.scss */
+  /* line 112, ../app/assets/styles/main.scss */
   .flame-wrapper {
     margin: inherit 20px;
   }
 }
-/* line 119, ../app/assets/styles/main.scss */
+/* line 120, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-strip {
   display: none;
   position: absolute;
@@ -374,60 +375,60 @@ a:link:hover, a:visited:hover {
   pointer-events: none;
   z-index: 110;
 }
-/* line 126, ../app/assets/styles/main.scss */
+/* line 127, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-left {
   left: -33px;
 }
-/* line 129, ../app/assets/styles/main.scss */
+/* line 130, ../app/assets/styles/main.scss */
 .flame-wrapper .flame-right {
   right: -45px;
 }
 
-/* line 134, ../app/assets/styles/main.scss */
+/* line 135, ../app/assets/styles/main.scss */
 .flame-wrapper, .container {
   max-width: 1200px;
 }
 
-/* line 139, ../app/assets/styles/main.scss */
+/* line 140, ../app/assets/styles/main.scss */
 .main-container {
   background: #222222;
   color: #f7ecd8;
   min-height: 90%;
 }
 
-/* line 146, ../app/assets/styles/main.scss */
+/* line 147, ../app/assets/styles/main.scss */
 .slider-container + .main-container {
   padding-top: 0;
 }
 
-/* line 150, ../app/assets/styles/main.scss */
+/* line 151, ../app/assets/styles/main.scss */
 .slider-main {
   max-height: 350px;
 }
 
-/* line 154, ../app/assets/styles/main.scss */
+/* line 155, ../app/assets/styles/main.scss */
 .full-justify {
   text-align: justify;
 }
-/* line 157, ../app/assets/styles/main.scss */
+/* line 158, ../app/assets/styles/main.scss */
 .full-justify:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 164, ../app/assets/styles/main.scss */
+/* line 165, ../app/assets/styles/main.scss */
 #full-content {
   padding: 1.5rem;
 }
 
-/* line 168, ../app/assets/styles/main.scss */
+/* line 169, ../app/assets/styles/main.scss */
 .content-row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
-/* line 173, ../app/assets/styles/main.scss */
+/* line 174, ../app/assets/styles/main.scss */
 .content-row .content-left {
   width: 850px;
   float: left;
@@ -435,24 +436,24 @@ a:link:hover, a:visited:hover {
   margin: auto;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 173, ../app/assets/styles/main.scss */
+  /* line 174, ../app/assets/styles/main.scss */
   .content-row .content-left {
     width: 650px;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 173, ../app/assets/styles/main.scss */
+  /* line 174, ../app/assets/styles/main.scss */
   .content-row .content-left {
     width: 500px;
   }
 }
 @media only screen and (max-width: 850px) {
-  /* line 173, ../app/assets/styles/main.scss */
+  /* line 174, ../app/assets/styles/main.scss */
   .content-row .content-left {
     width: 368px;
   }
 }
-/* line 193, ../app/assets/styles/main.scss */
+/* line 194, ../app/assets/styles/main.scss */
 .content-row .content-right {
   float: right;
   width: 320px;
@@ -461,41 +462,41 @@ a:link:hover, a:visited:hover {
   padding: 2.5rem 15px;
   overflow-y: visible;
 }
-/* line 202, ../app/assets/styles/main.scss */
+/* line 203, ../app/assets/styles/main.scss */
 .content-row .content-right a {
   color: white;
 }
-/* line 207, ../app/assets/styles/main.scss */
+/* line 208, ../app/assets/styles/main.scss */
 .content-row .content-left, .content-row .content-right {
   box-sizing: border-box;
 }
 @media only screen and (max-width: 767px) {
-  /* line 207, ../app/assets/styles/main.scss */
+  /* line 208, ../app/assets/styles/main.scss */
   .content-row .content-left, .content-row .content-right {
     width: 100%;
     max-width: 100%;
   }
 }
 
-/* line 216, ../app/assets/styles/main.scss */
+/* line 217, ../app/assets/styles/main.scss */
 .sidebar-section {
   margin: 2rem auto 4rem;
 }
-/* line 219, ../app/assets/styles/main.scss */
+/* line 220, ../app/assets/styles/main.scss */
 .sidebar-section .heading {
   border-bottom: 3px solid #ffa400;
 }
 
-/* line 224, ../app/assets/styles/main.scss */
+/* line 225, ../app/assets/styles/main.scss */
 .slider-container {
   z-index: 0;
   position: relative;
 }
-/* line 228, ../app/assets/styles/main.scss */
+/* line 229, ../app/assets/styles/main.scss */
 .slider-container .nivoSlider {
   margin: 0 auto;
 }
-/* line 232, ../app/assets/styles/main.scss */
+/* line 233, ../app/assets/styles/main.scss */
 .slider-container .nivo-controlNav {
   position: absolute;
   bottom: 1rem;
@@ -503,12 +504,12 @@ a:link:hover, a:visited:hover {
   z-index: 99;
 }
 
-/* line 241, ../app/assets/styles/main.scss */
+/* line 242, ../app/assets/styles/main.scss */
 .slider-main img {
   width: 100%;
 }
 
-/* line 244, ../app/assets/styles/main.scss */
+/* line 245, ../app/assets/styles/main.scss */
 #navbar {
   margin: auto-10px;
   z-index: 100;
@@ -516,41 +517,41 @@ a:link:hover, a:visited:hover {
   padding-left: 14rem;
   position: relative;
 }
-/* line 249, ../app/assets/styles/main.scss */
+/* line 250, ../app/assets/styles/main.scss */
 #navbar .container {
   text-align: left;
 }
 @media only screen and (max-width: 815px) {
-  /* line 251, ../app/assets/styles/main.scss */
+  /* line 252, ../app/assets/styles/main.scss */
   #navbar .container {
     text-align: center;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 244, ../app/assets/styles/main.scss */
+  /* line 245, ../app/assets/styles/main.scss */
   #navbar {
     padding-left: 2rem;
   }
 }
-/* line 261, ../app/assets/styles/main.scss */
+/* line 262, ../app/assets/styles/main.scss */
 #navbar img {
   max-height: 100%;
 }
-/* line 264, ../app/assets/styles/main.scss */
+/* line 265, ../app/assets/styles/main.scss */
 #navbar .links {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-/* line 268, ../app/assets/styles/main.scss */
+/* line 269, ../app/assets/styles/main.scss */
 #navbar .links li {
   vertical-align: middle;
 }
-/* line 271, ../app/assets/styles/main.scss */
+/* line 272, ../app/assets/styles/main.scss */
 #navbar .links li.link {
   display: inline-block;
 }
-/* line 273, ../app/assets/styles/main.scss */
+/* line 274, ../app/assets/styles/main.scss */
 #navbar .links li.link a {
   text-transform: uppercase;
   font-weight: 600;
@@ -561,39 +562,39 @@ a:link:hover, a:visited:hover {
   text-decoration: none;
   padding: 0 1.5rem;
 }
-/* line 283, ../app/assets/styles/main.scss */
+/* line 284, ../app/assets/styles/main.scss */
 #navbar .links li.link a:hover {
   background-color: #8c8066;
   color: #fdb71a;
 }
 @media only screen and (max-width: 480px) {
-  /* line 273, ../app/assets/styles/main.scss */
+  /* line 274, ../app/assets/styles/main.scss */
   #navbar .links li.link a {
     padding: 0 1rem;
   }
 }
-/* line 291, ../app/assets/styles/main.scss */
+/* line 292, ../app/assets/styles/main.scss */
 #navbar .links li.link .icon {
   vertical-align: middle;
   padding: 0 0.5rem;
 }
-/* line 294, ../app/assets/styles/main.scss */
+/* line 295, ../app/assets/styles/main.scss */
 #navbar .links li.link .icon img {
   height: 50%;
 }
-/* line 300, ../app/assets/styles/main.scss */
+/* line 301, ../app/assets/styles/main.scss */
 #navbar .links-primary {
   line-height: 6rem;
   text-align: left;
 }
-/* line 305, ../app/assets/styles/main.scss */
+/* line 306, ../app/assets/styles/main.scss */
 #navbar .links-primary li.link a {
   -moz-transition: opacity 300ms, color 300ms, background-color 300ms;
   -o-transition: opacity 300ms, color 300ms, background-color 300ms;
   -webkit-transition: opacity 300ms, color 300ms, background-color 300ms;
   transition: opacity 300ms, color 300ms, background-color 300ms;
 }
-/* line 309, ../app/assets/styles/main.scss */
+/* line 310, ../app/assets/styles/main.scss */
 #navbar .links-secondary {
   height: 6rem;
   line-height: 6rem;
@@ -601,24 +602,24 @@ a:link:hover, a:visited:hover {
   margin-left: 2rem;
   text-align: center;
 }
-/* line 318, ../app/assets/styles/main.scss */
+/* line 319, ../app/assets/styles/main.scss */
 #navbar .links-secondary img {
   height: 100%;
   vertical-align: middle;
 }
-/* line 322, ../app/assets/styles/main.scss */
+/* line 323, ../app/assets/styles/main.scss */
 #navbar .links-secondary li.link a {
   -moz-transition: opacity 300ms;
   -o-transition: opacity 300ms;
   -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
 }
-/* line 324, ../app/assets/styles/main.scss */
+/* line 325, ../app/assets/styles/main.scss */
 #navbar .links-secondary li.link a:hover {
   opacity: 0.7;
   background: none;
 }
-/* line 331, ../app/assets/styles/main.scss */
+/* line 332, ../app/assets/styles/main.scss */
 #navbar #main-logo {
   -moz-transition: -moz-transform 100ms;
   -o-transition: -o-transform 100ms;
@@ -638,20 +639,20 @@ a:link:hover, a:visited:hover {
   display: block;
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
 }
-/* line 345, ../app/assets/styles/main.scss */
+/* line 346, ../app/assets/styles/main.scss */
 #navbar #main-logo:hover {
   -moz-transform: scale(1.15, 1.15);
   -ms-transform: scale(1.15, 1.15);
   -webkit-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15);
 }
-/* line 348, ../app/assets/styles/main.scss */
+/* line 349, ../app/assets/styles/main.scss */
 #navbar #main-logo img {
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 480px) {
-  /* line 331, ../app/assets/styles/main.scss */
+  /* line 332, ../app/assets/styles/main.scss */
   #navbar #main-logo {
     position: static;
     display: inline-block;
@@ -662,42 +663,42 @@ a:link:hover, a:visited:hover {
   }
 }
 
-/* line 364, ../app/assets/styles/main.scss */
+/* line 365, ../app/assets/styles/main.scss */
 #max-horn {
   width: 300px;
   position: absolute;
   top: 0;
   left: -60px;
 }
-/* line 370, ../app/assets/styles/main.scss */
+/* line 371, ../app/assets/styles/main.scss */
 #max-horn .logo {
   position: static;
   padding: 2rem;
   width: 26rem;
 }
 
-/* line 377, ../app/assets/styles/main.scss */
+/* line 378, ../app/assets/styles/main.scss */
 .justified-grid {
   text-align: justify;
 }
-/* line 379, ../app/assets/styles/main.scss */
+/* line 380, ../app/assets/styles/main.scss */
 .justified-grid li {
   height: 100;
   display: inline-block;
 }
-/* line 383, ../app/assets/styles/main.scss */
+/* line 384, ../app/assets/styles/main.scss */
 .justified-grid .last {
   content: '';
   width: 100%;
   display: inline-block;
 }
-/* line 388, ../app/assets/styles/main.scss */
+/* line 389, ../app/assets/styles/main.scss */
 .justified-grid img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 395, ../app/assets/styles/main.scss */
+/* line 396, ../app/assets/styles/main.scss */
 .image-gallery img {
   -moz-transition: opacity 150ms;
   -o-transition: opacity 150ms;
@@ -705,33 +706,33 @@ a:link:hover, a:visited:hover {
   transition: opacity 150ms;
   opacity: 0.8;
 }
-/* line 398, ../app/assets/styles/main.scss */
+/* line 399, ../app/assets/styles/main.scss */
 .image-gallery img:hover {
   opacity: 1;
 }
 
-/* line 404, ../app/assets/styles/main.scss */
+/* line 405, ../app/assets/styles/main.scss */
 .video-gallery {
   text-align: center;
   margin: auto;
 }
-/* line 407, ../app/assets/styles/main.scss */
+/* line 408, ../app/assets/styles/main.scss */
 .video-gallery .video {
   margin: 3.0rem;
 }
 
-/* line 412, ../app/assets/styles/main.scss */
+/* line 413, ../app/assets/styles/main.scss */
 .twitter-feed {
   text-align: center;
 }
 
-/* line 420, ../app/assets/styles/main.scss */
+/* line 421, ../app/assets/styles/main.scss */
 .news-item {
   margin: 3rem auto;
   padding: 1rem 0;
   border-top: 1px solid #dbd1c0;
 }
-/* line 428, ../app/assets/styles/main.scss */
+/* line 429, ../app/assets/styles/main.scss */
 .news-item .date {
   margin: 0;
   font-weight: 100;
